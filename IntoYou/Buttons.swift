@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct Buttons: View {
+    let title: String
+    let action: () -> Void
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: action) {
+            HStack(alignment: .center, spacing: 10) {
+                Text(title)
+                    .font(.body)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Constants.White)
+            }
+            .padding(10)
+            .frame(width: 343, height: 50, alignment: .center)
+            .background(Constants.Black)
+            .cornerRadius(24)
+        }
     }
 }
 
 #Preview {
-    Buttons()
+    Buttons(title: "Button Text", action: {
+        print("Button tapped!")
+    })
 }
