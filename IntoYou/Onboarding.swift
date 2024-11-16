@@ -15,7 +15,7 @@ struct Onboarding: View {
                     
                     
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Start Getting Into You")
+                        Text("Start Getting Into You!")
                             .font(.title)
                             .multilineTextAlignment(.leading)
                         
