@@ -2,14 +2,14 @@ import SwiftUI
 
 struct Onboarding: View {
     var body: some View {
-        NavigationView {
+        NavigationView { // Root NavigationView
             ZStack {
                 Color("BackgroundColor")
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack(spacing: 0) { // Remove unnecessary gaps
                     // Custom navigation bar
-                    NavigationTop(title: "IntoYou")
+                    NavigationTop(title: "IntoYou") 
                     
                     VStack(alignment: .center, spacing: 32) {
                         // Image Section
@@ -120,7 +120,9 @@ struct Onboarding: View {
         }
     }
 }
+    
 }
+
 
 
 #Preview {

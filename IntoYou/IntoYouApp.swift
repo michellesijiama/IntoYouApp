@@ -11,7 +11,10 @@ import SwiftUI
 struct IntoYouApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView { // Root NavigationView
+            Onboarding() // Make Onboarding the initial view
+            }
         }
     }
 }
+
